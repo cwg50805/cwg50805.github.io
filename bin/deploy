@@ -12,7 +12,7 @@ echo "Started deploying"
 #then
 #  git branch -D gh-pages
 #fi
-git checkout -b gh-pages
+git checkout gh-pages
 
 # Build site.
 yarn install --modules-folder ./_assets/yarn
