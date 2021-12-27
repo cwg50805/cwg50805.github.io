@@ -4,7 +4,7 @@ blog_theme: dark # Or use dark
 name: WillCome
 paginate: 25
 url: http://cwg50805.com
-
+baseurl: cwg50805.github.io
 
 # Optional settings
 
