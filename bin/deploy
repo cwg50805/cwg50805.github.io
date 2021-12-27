@@ -12,7 +12,7 @@ if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
 fi
-git checkout gh-pages
+git checkout -b gh-pages
 
 # Build site.
 yarn install --modules-folder ./_assets/yarn
