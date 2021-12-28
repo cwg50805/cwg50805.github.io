@@ -1,20 +1,18 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Will.Com</title>
+    <description></description>
+    <link>http://cwg50805.com</link>
+    <atom:link href="http://cwg50805.com/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>5分鐘建立GitHub Pages</title>
+        <description>從零開始建立GitHub Pages just like this!</description>
+        <pubDate>Tue, 28 Dec 2021 00:00:00 +0800</pubDate>
+        <link>http://cwg50805.com/posts/my-first-article</link>
+        <guid isPermaLink="true">http://cwg50805.com/posts/my-first-article</guid>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
